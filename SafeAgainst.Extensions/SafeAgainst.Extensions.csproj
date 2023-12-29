@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.0</TargetFramework>
+    <PackageId>SafeAgainst.Extensions</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ganușceac Vlad</Authors>
+    <Product>SafeAgainst.Extensions</Product>
+    <Title>SafeAgainst.Extensions</Title>
+    <Description>Provides extension methods for both synchronous and asynchronous guard clauses generic types as well as for Enums, Objects, Collections, Strings and differenc Numeric types encapsulated into 'SafeContainer'.</Description>
+    <RepositoryUrl>https://github.com/VladGanuscheak/SafeAgainst.Extensions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>safeagainst;guardclauses;guard;clauses;preconditions;extensions;.net;dotnet;c#</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SafeAgainst" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
