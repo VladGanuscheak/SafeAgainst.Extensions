@@ -7,7 +7,7 @@
     <Authors>Ganușceac Vlad</Authors>
     <Product>SafeAgainst.Extensions</Product>
     <Title>SafeAgainst.Extensions</Title>
-    <Description>Provides extension methods for both synchronous and asynchronous guard clauses generic types as well as for Enums, Objects, Collections, Strings and differenc Numeric types encapsulated into 'SafeContainer'.</Description>
+    <Description>Provides extension methods for both synchronous and asynchronous guard clauses for generic types, as well as for Enums, Objects, Collections, Strings, and various numeric types encapsulated in 'SafeContainer'.</Description>
     <RepositoryUrl>https://github.com/VladGanuscheak/SafeAgainst.Extensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>safeagainst;guardclauses;guard;clauses;preconditions;extensions;.net;dotnet;c#</PackageTags>

@@ -1,6 +1,6 @@
 # SafeAgainst
 
-Provides extension methods for both synchronous and asynchronous guard clauses generic types as well as for Enums, Objects, Collections, Strings and differenc Numeric types encapsulated into 'SafeContainer'.
+Provides extension methods for both synchronous and asynchronous guard clauses for generic types, as well as for Enums, Objects, Collections, Strings, and various numeric types encapsulated in 'SafeContainer'.
 
 ### Global Picture
 
