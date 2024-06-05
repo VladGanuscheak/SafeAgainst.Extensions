@@ -21,7 +21,7 @@ jobs:
       run: |
         cd SafeAgainst.Extensions
         dotnet restore
-        dotnet build --configuration Release --no-restore /p:ContinuousIntegrationBuild=true
+        dotnet build --configuration Release --no-restore --output ./output /p:ContinuousIntegrationBuild=true
         dotnet test --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v4.0.1
