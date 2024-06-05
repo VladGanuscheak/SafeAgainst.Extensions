@@ -396,7 +396,7 @@ namespace SafeAgainst.Extensions.Tests
         [Fact]
         public void AgainstLeadingOrTrailingWhitespaces_NullCheckByContainer_NotModified()
         {
-            // Arrange;
+            // Arrange
             string value = null;
             var container = SafeContainer.Create(value);
 
@@ -411,7 +411,7 @@ namespace SafeAgainst.Extensions.Tests
         [Fact]
         public void AgainstLeadingOrTrailingWhitespaces_EmptyCheckByContainer_NotModified()
         {
-            // Arrange;
+            // Arrange
             var value = string.Empty;
             var container = SafeContainer.Create(value);
 

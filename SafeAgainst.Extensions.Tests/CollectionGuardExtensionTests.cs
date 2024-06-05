@@ -11,8 +11,9 @@ namespace SafeAgainst.Extensions.Tests
             .Append(5)
             .Append(3)
             .ToList();
+        private static readonly string[] defaultArrayValue = ["first", "second", "third"];
 
-        public class UnitializedCollections<T>
+        public class UninitializedCollections<T>
         {
             public IList<T> NullList = null;
             public ICollection<T> NullCollection = null;
@@ -35,7 +36,7 @@ namespace SafeAgainst.Extensions.Tests
         {
             // Arrange
             IEnumerable<int> nullEnumerableCollection = null;
-            var uninitializedCollections = new UnitializedCollections<int>();
+            var uninitializedCollections = new UninitializedCollections<int>();
             var container = SafeContainer.Create(nullEnumerableCollection);
 
             // Act
@@ -68,7 +69,7 @@ namespace SafeAgainst.Extensions.Tests
             var container = SafeContainer.Create(emptyEnumerableCollection);
 
             // Act
-            container.SafeAgainstNull(new string[] { "first", "second", "third" });
+            container.SafeAgainstNull(defaultArrayValue);
             emptyEnumerableCollection = container.Value;
 
             // Assert
@@ -190,7 +191,7 @@ namespace SafeAgainst.Extensions.Tests
             // Assert
             Assert.DoesNotContain(enumeration, x => x == null);
             Assert.Contains(enumeration, x => x != null);
-            Assert.True(enumeration.ToList().Count == 3);
+            Assert.Equal(3, enumeration.ToList().Count);
         }
 
         [Fact]
@@ -210,7 +211,7 @@ namespace SafeAgainst.Extensions.Tests
             // Assert
             Assert.DoesNotContain(enumeration, x => x == null);
             Assert.Contains(enumeration, x => x != null);
-            Assert.True(enumeration.ToList().Count == 3);
+            Assert.Equal(3, enumeration.ToList().Count);
         }
         #endregion
 
@@ -232,7 +233,7 @@ namespace SafeAgainst.Extensions.Tests
 
             // Assert
             Assert.DoesNotContain(enumeration, x => x == 0);
-            Assert.True(enumeration.ToList().Count == 2);
+            Assert.Equal(2, enumeration.ToList().Count);
         }
 
         [Fact]
@@ -250,7 +251,7 @@ namespace SafeAgainst.Extensions.Tests
 
             // Assert
             Assert.DoesNotContain(enumeration, x => x == 0);
-            Assert.True(enumeration.ToList().Count == 2);
+            Assert.Equal(2, enumeration.ToList().Count);
         }
 
         #endregion
