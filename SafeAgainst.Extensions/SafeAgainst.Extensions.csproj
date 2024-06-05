@@ -23,7 +23,7 @@
 
 
   <ItemGroup>
-    <None Include="..\..\SafeAgainst\license.txt">
+    <None Include="..\license.txt">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
