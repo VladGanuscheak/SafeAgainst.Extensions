@@ -15,7 +15,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>logo.png</PackageIcon>
     <PackageIconUrl />
-    <PackageReleaseNotes>Migrated to .Net Core 8.0</PackageReleaseNotes>
+    <PackageReleaseNotes>No code smells, bugs, or other issues were detected after applying full code coverage with SonarCloud and Codecov.</PackageReleaseNotes>
     <PackageLicenseFile>license.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
