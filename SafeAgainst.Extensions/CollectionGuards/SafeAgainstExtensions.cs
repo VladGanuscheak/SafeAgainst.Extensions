@@ -76,7 +76,7 @@ namespace SafeAgainst.Extensions.CollectionGuards
         }
 
         /// <summary>
-        /// Elimintates values that are not in the desired set from the collection within the current container.
+        /// Eliminates values that are not in the desired set from the collection within the current container.
         /// Example: container.SafeAgainstValuesNotInSet(desiredSet);
         /// </summary>
         /// <typeparam name="T">The type of elements in the collection.</typeparam>
