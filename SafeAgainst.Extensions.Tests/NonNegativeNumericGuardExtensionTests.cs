@@ -582,85 +582,85 @@ namespace SafeAgainst.Extensions.Tests
         public void AgainstNullOrZero_NotZeroCheckByContainer_NotModified()
         {
             // Arrange
-            byte byteValue = 1;
+            byte? byteValue = 1;
             var byteContainer = SafeContainer.Create(byteValue);
 
-            decimal decimalValue = 1;
+            decimal? decimalValue = 1;
             var decimalContainer = SafeContainer.Create(decimalValue);
 
-            double doubleValue = 1;
+            double? doubleValue = 1;
             var doubleContainer = SafeContainer.Create(doubleValue);
 
-            float floatValue = 1;
+            float? floatValue = 1;
             var floatContainer = SafeContainer.Create(floatValue);
 
-            int intValue = 1;
+            int? intValue = 1;
             var intContainer = SafeContainer.Create(intValue);
 
-            long longValue = 1;
+            long? longValue = 1;
             var longContainer = SafeContainer.Create(longValue);
 
-            sbyte sbyteValue = 1;
+            sbyte? sbyteValue = 1;
             var sbyteContainer = SafeContainer.Create(sbyteValue);
 
-            short shortValue = 1;
+            short? shortValue = 1;
             var shortContainer = SafeContainer.Create(shortValue);
 
-            uint uintValue = 1;
+            uint? uintValue = 1;
             var uintContainer = SafeContainer.Create(uintValue);
 
-            ulong ulongValue = 1;
+            ulong? ulongValue = 1;
             var ulongContainer = SafeContainer.Create(ulongValue);
 
-            ushort ushortValue = 1;
+            ushort? ushortValue = 1;
             var ushortContainer = SafeContainer.Create(ushortValue);
 
             // Act
-            byteContainer.SafeAgainstZero(2);
+            byteContainer.SafeAgainstNullOrZero(2);
             byteValue = byteContainer.Value;
 
-            decimalContainer.SafeAgainstZero(2);
+            decimalContainer.SafeAgainstNullOrZero(2);
             decimalValue = decimalContainer.Value;
 
-            doubleContainer.SafeAgainstZero(2);
+            doubleContainer.SafeAgainstNullOrZero(2);
             doubleValue = doubleContainer.Value;
 
-            floatContainer.SafeAgainstZero(2);
+            floatContainer.SafeAgainstNullOrZero(2);
             floatValue = floatContainer.Value;
 
-            intContainer.SafeAgainstZero(2);
+            intContainer.SafeAgainstNullOrZero(2);
             intValue = intContainer.Value;
 
-            longContainer.SafeAgainstZero(2);
+            longContainer.SafeAgainstNullOrZero(2);
             longValue = longContainer.Value;
 
-            sbyteContainer.SafeAgainstZero(2);
+            sbyteContainer.SafeAgainstNullOrZero(2);
             sbyteValue = sbyteContainer.Value;
 
-            shortContainer.SafeAgainstZero(2);
+            shortContainer.SafeAgainstNullOrZero(2);
             shortValue = shortContainer.Value;
 
-            uintContainer.SafeAgainstZero(2);
+            uintContainer.SafeAgainstNullOrZero(2);
             uintValue = uintContainer.Value;
 
-            ulongContainer.SafeAgainstZero(2);
+            ulongContainer.SafeAgainstNullOrZero(2);
             ulongValue = ulongContainer.Value;
 
-            ushortContainer.SafeAgainstZero(2);
+            ushortContainer.SafeAgainstNullOrZero(2);
             ushortValue = ushortContainer.Value;
 
             // Assert
-            Assert.Equal(1, byteValue);
+            Assert.Equal((int?)1, byteValue);
             Assert.Equal(1, decimalValue);
             Assert.Equal(1, doubleValue);
             Assert.Equal(1, floatValue);
             Assert.Equal(1, intValue);
             Assert.Equal(1, longValue);
-            Assert.Equal(1, sbyteValue);
-            Assert.Equal(1, shortValue);
+            Assert.Equal((sbyte?)1, sbyteValue);
+            Assert.Equal((short?)1, shortValue);
             Assert.Equal(1u, uintValue);
             Assert.Equal(1ul, ulongValue);
-            Assert.Equal(1, ushortValue);
+            Assert.Equal((ushort?)1, ushortValue);
         }
 
         [Fact]

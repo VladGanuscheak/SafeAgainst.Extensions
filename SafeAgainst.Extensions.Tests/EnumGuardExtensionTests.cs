@@ -29,7 +29,7 @@ namespace SafeAgainst.Extensions.Tests
             powerOfTwo = container.Value;
 
             // Assert
-            Assert.True(initialValue == 0);
+            Assert.Equal(0, (int)initialValue);
             Assert.Equal(PowerOfTwo.One, powerOfTwo);
         }
 
