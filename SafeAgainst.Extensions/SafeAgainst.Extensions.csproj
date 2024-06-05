@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <PackageId>SafeAgainst.Extensions</PackageId>
-    <Version>8.0.0</Version>
+    <Version>8.0.1</Version>
     <Authors>Ganușceac Vlad</Authors>
     <Product>SafeAgainst.Extensions</Product>
     <Title>SafeAgainst.Extensions</Title>
@@ -11,17 +11,22 @@
     <RepositoryUrl>https://github.com/VladGanuscheak/SafeAgainst.Extensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>safeagainst;guardclauses;guard;clauses;preconditions;extensions;.net;dotnet;c#</PackageTags>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>logo.png</PackageIcon>
     <PackageIconUrl />
     <PackageReleaseNotes>Migrated to .Net Core 8.0</PackageReleaseNotes>
+    <PackageLicenseFile>license.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
 
 
   <ItemGroup>
+    <None Include="..\..\SafeAgainst\license.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
@@ -34,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SafeAgainst" Version="8.0.0" />
+    <PackageReference Include="SafeAgainst" Version="8.0.1" />
   </ItemGroup>
 
 </Project>
