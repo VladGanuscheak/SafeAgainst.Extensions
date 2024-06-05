@@ -45,7 +45,11 @@ jobs:
       - name: Install SonarCloud scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
         run: |
-          mkdir .sonar/scanner
+          if (Test-Path -Path .sonar/scanner) { 
+            Write-Host ".sonar/scanner already exists"
+          } else {
+            mkdir .sonar/scanner
+          }
           dotnet tool update dotnet-sonarscanner --tool-path .sonar/scanner
 
       - name: Prepare SonarCloud analysis
