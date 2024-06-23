@@ -1,10 +1,8 @@
 # SafeAgainst.Extensions
 
-[![.NET](https://github.com/VladGanuscheak/SafeAgainst.Extensions/actions/workflows/dotnet.yml/badge.svg)](https://github.com/VladGanuscheak/SafeAgainst.Extensions/actions/workflows/dotnet.yml)
-[![SonarCloud](https://github.com/VladGanuscheak/SafeAgainst.Extensions/actions/workflows/sonarcloud.yml/badge.svg)](https://github.com/VladGanuscheak/SafeAgainst.Extensions/actions/workflows/sonarcloud.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=VladGanuscheak_SafeAgainst.Extensions&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=VladGanuscheak_SafeAgainst.Extensions)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=VladGanuscheak_SafeAgainst.Extensions&metric=coverage)](https://sonarcloud.io/summary/new_code?id=VladGanuscheak_SafeAgainst.Extensions)
-[![codecov](https://codecov.io/gh/VladGanuscheak/SafeAgainst.Extensions/graph/badge.svg?token=ZTC9B7OKY8)](https://codecov.io/gh/VladGanuscheak/SafeAgainst.Extensions)
+[![.NET](https://github.com/VladGanuscheak/SafeAgainst.Extensions/actions/workflows/net7_dotnet.yml/badge.svg)](https://github.com/VladGanuscheak/SafeAgainst.Extensions/actions/workflows/net7_dotnet.yml)
+[![SonarCloud](https://github.com/VladGanuscheak/SafeAgainst.Extensions/actions/workflows/net7_sonarcloud.yml/badge.svg)](https://github.com/VladGanuscheak/SafeAgainst.Extensions/actions/workflows/net7_sonarcloud.yml)
+[![codecov](https://codecov.io/gh/VladGanuscheak/SafeAgainst.Extensions/branch/releases%2Fnet_7/graph/badge.svg?token=ZTC9B7OKY8)](https://codecov.io/gh/VladGanuscheak/SafeAgainst.Extensions)
 
 
 
