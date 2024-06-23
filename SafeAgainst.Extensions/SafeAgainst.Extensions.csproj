@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <PackageId>SafeAgainst.Extensions</PackageId>
-    <Version>8.0.1</Version>
+    <Version>7.0.1</Version>
     <Authors>Ganușceac Vlad</Authors>
     <Product>SafeAgainst.Extensions</Product>
     <Title>SafeAgainst.Extensions</Title>
@@ -39,7 +39,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="SafeAgainst" Version="8.0.1" />
+    <PackageReference Include="SafeAgainst" Version="7.0.1" />
   </ItemGroup>
 
 </Project>

@@ -11,7 +11,7 @@ namespace SafeAgainst.Extensions.Tests
             .Append(5)
             .Append(3)
             .ToList();
-        private static readonly string[] defaultArrayValue = ["first", "second", "third"];
+        private static readonly string[] defaultArrayValue = new[] { "first", "second", "third" };
 
         public class UninitializedCollections<T>
         {
